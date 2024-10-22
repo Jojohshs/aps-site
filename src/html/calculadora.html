@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Transição de Caixas com Um Botão</title>
+    <script src="../js/calculadora.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+</head>
+<body>
+    <header>
+        <h1>PegadaGreen.org</h1>
+    </header>
+
+    <article>
+        <div class="navbar">
+            <nav>
+                <ul class="navbar-items">
+                    <ul class="navbar-items">
+                        <li> <a href="/index.html">Página inicial</a></li> <!--Link para página inicial--->
+
+                        <li> <a href="../html/intro.html">Introdução</a></li> <!--Link para página introdução--->
+    
+                        <li> <a href="../html/quem-somos.html"> quem somos</a></li> <!--Link para página quem somos--->
+    
+                        <li><a href="../html/explicacao.html"> como funciona o calculo</a></li> <!--Link para página da explicação do cálculo--->
+                        <li>
+                            <a href="../html/calculadora.html">Calculadora</a> <!--Link para página da calculadora--->
+                        </li>
+  
+                </ul>
+            </nav>
+        </div>
+            <!--Calculadora-->
+        <section id="content-section">
+            <h2 class="uppercase">Calcule agora</h2>
+            <p>O presente projeto foi pensado pelos alunos João Pedro Silva, Daniel Mantilha, Derick, João Pinheiro e Gabriel, como o objetivo de criar um site com o tema “Créditos de Carbono”.</p>
+
+           
+            <div class="box active">
+                <img src="../img/carro.png" alt="">
+                <input id="box1" type="text" placeholder=" quantidade de veículos da empresa: ">
+            </div>
+<!--Box que pergunta a quantidade de litros de gasolina que a empresa utiliza-->
+          
+            <!--Botão para ir para a próxima página-->
+            <div class="button-container">
+                <button id="nextButton">Próximo</button>
+            </div>
+
+            <div id="calculateContainer" style="display: none;">
+                <div class="button-container">
+                    <!--Botão para realizar o cálculo das emissões-->
+                    <button id="calculateButton">Calcular as emissões</button>
+                </div>
+                <div id="result" class="result"></div>
+            </div>
+        </section>
+    </article>
+</body>
+</html>
